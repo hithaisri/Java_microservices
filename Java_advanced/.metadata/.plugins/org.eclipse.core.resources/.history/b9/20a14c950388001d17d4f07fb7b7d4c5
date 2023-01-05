@@ -1,0 +1,18 @@
+package com.java8;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+public class DurationTest {
+
+	public static void Test() {
+		
+		Duration d=Duration.ofDays(10);
+				
+		LocalDateTime current=LocalDateTime.now();
+		
+		LocalDateTime current1= current.plus(d);
+		
+		
+	}
+}

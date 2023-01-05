@@ -1,0 +1,42 @@
+package com.java8;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
+
+public class Date {
+
+	public static void main(String[] args) {
+	
+		LocalDate date=LocalDate.now();
+		System.out.println("Date "+date);
+		
+		LocalTime time=LocalTime.now();
+		System.out.println("TIme " +time);
+		
+		LocalDateTime dateTIme=LocalDateTime.now();
+		System.out.println("Date & TIme "+dateTIme);
+
+		DateTimeFormatter format=DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+		String dateFormat=dateTIme.format(format);
+		
+		System.out.println("Date Formatted " +dateFormat);
+	
+		Month month=dateTIme.getMonth();
+		int day=dateTIme.getDayOfMonth();
+		int seconds=dateTIme.getSecond();
+		int hour=dateTIme.getHour();
+		int minute=dateTIme.getMinute();
+		
+		System.out.println("Month " +month+" Day "+day+" Hour "+hour+" Minute "
+		+minute+" Second "+seconds);
+
+		 LocalDateTime specificDate =
+				 dateTIme.withDayOfMonth(24).withYear(2016);
+			 
+			    System.out.println("specific date with "+
+			                       "current time : "+specificDate);
+	}
+}

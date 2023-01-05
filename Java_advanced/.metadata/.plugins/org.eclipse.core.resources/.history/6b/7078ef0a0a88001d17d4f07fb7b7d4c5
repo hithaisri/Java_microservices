@@ -1,0 +1,23 @@
+package com.collectionframework;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListTest {
+
+	public static void test() {
+		List<Integer> l1=new ArrayList<Integer>();
+
+		l1.add(0, 110);
+		l1.add(1, 220);
+		l1.add(2, 330);
+
+		System.out.println("List1: "+l1);
+	}
+	public static void main(String[] args) {
+
+		test();
+	}
+
+
+}

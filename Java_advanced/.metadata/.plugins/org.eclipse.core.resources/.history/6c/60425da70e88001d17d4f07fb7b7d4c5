@@ -1,0 +1,13 @@
+package com.collectionframework;
+
+public class Student extends ComparatorExample{
+
+	public Integer id;
+	public String name;
+	public Integer age;
+	
+	public static void main(String[] args) {
+		Student s = new Student(1,"Hitu",3);
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.java8;
+
+interface TestInterface
+{
+	public void square(int s);
+	
+	public default String show() {
+		return "Square";
+		
+	}
+	
+	}
+
+public class DefaultMethod {
+
+}

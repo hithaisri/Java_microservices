@@ -1,0 +1,9 @@
+package com.collectionframework;
+
+public class SimpleArray {
+
+	public static void testArray() {
+		
+		int arr[]=new arr[5];
+	}
+}

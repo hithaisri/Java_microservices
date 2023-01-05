@@ -1,0 +1,6 @@
+package com.collectionframework;
+
+public class DQ {
+
+	public static void main (String[] args)
+}

@@ -1,0 +1,29 @@
+package com.collectionframework;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+import com.java8.ForEach;
+
+public class TestSet {
+
+	public static void main(String[] args) {
+		
+		HashSet<String> set=new HashSet<String>();
+		set.add("a");
+		set.add("b");
+		set.add("a");
+		set.add(null);
+		
+		set.isEmpty();
+		
+		Iterator<String> sets=set.iterator();
+		
+		while(sets.hasNext()){
+			System.out.println(""+sets.next());
+		}
+		{
+			
+		}
+	}
+}

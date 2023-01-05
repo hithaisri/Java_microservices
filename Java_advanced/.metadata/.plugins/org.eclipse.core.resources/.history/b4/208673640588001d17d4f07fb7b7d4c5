@@ -1,0 +1,29 @@
+package com.java8;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+public class DurationTest {
+
+	public static void Test() {
+		
+		Duration d=Duration.ofDays(10);
+				
+		LocalDateTime current=LocalDateTime.now();
+		
+		LocalDateTime current1= current.plus(d);
+		
+		System.out.println("current1: "+current1);
+		
+		
+		Duration gap = Duration.between(current1, current);
+        System.out.println(" gap between time1 & time2= " + gap);
+	}
+	
+	public static void main(String[] args)
+    {
+         
+		Test();
+         
+    }
+}

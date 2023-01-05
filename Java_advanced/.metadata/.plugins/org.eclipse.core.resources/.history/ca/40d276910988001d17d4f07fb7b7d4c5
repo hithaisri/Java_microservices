@@ -1,0 +1,11 @@
+package com.collectionframework;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListTest {
+
+	List<E> list=new ArrayList(null)<>();
+	
+	
+}

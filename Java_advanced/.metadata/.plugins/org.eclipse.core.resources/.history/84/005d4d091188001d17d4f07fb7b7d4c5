@@ -1,0 +1,11 @@
+package com.collectionframework;
+
+import java.util.PriorityQueue;
+
+public class DQ {
+
+	public static void main (String[] args) {
+		
+		PriorityQueue<String> pq=new PriorityQueue<String>();
+	}
+}
