@@ -16,13 +16,17 @@ public class BreakPalindrome {
         }
         
         for(int i=0;i<palindromeStr.length();i++){
-           if(palindromeStr.charAt(i)!='a' ){
+           if(palindromeStr.charAt(i)!='a' 
+           && (palindromeStr.length()%2==0 
+           || i!=palindromeStr.length()/2)){
                return palindromeStr.substring(0,i)
                +"a"+palindromeStr.substring(i+1);
            }
-                   }
+           else
+        	   return "IMPOSSIBLE";
+        }
         
-    return "IMPOSSIBLE";
+    return palindromeStr.substring(0,palindromeStr.length()-1)+"b";
     }
 
 }

@@ -534,3 +534,4 @@ org.eclipse.core.runtime.CoreException: Could not read maven project
 	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:707)
 	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1027)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2023-01-06 16:02:40,320 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

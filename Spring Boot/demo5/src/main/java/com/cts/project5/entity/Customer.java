@@ -16,10 +16,10 @@ public class Customer {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 	
-	@Column
+	
 	private String fname;
 	
-	@Column
+	
 	private String lname;
 
 	protected Customer() {

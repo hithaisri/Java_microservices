@@ -20,9 +20,11 @@ public class BreakPalindrome {
                return palindromeStr.substring(0,i)
                +"a"+palindromeStr.substring(i+1);
            }
-                   }
+           else
+        	   return "IMPOSSIBLE";
+        }
         
-    return "IMPOSSIBLE";
+    return palindromeStr.substring(0,palindromeStr.length()-1)+"b";
     }
 
 }
