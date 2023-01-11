@@ -1,0 +1,71 @@
+package com.cts.project5.entity;
+
+import java.util.Objects;
+
+import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Entity
+public class Customer {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	private Long id;
+	
+	@Column
+	private String fname;
+	
+	@Column
+	private String lname;
+
+	protected Customer() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Customer(String fname, String lname) {
+		
+		this.fname = fname;
+		this.lname = lname;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+
+	@Override
+	public String toString() {
+		return "Customer [id=" + id + ", fname=" + fname + ", lname=" + lname + "]";
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(fname, id, lname);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Customer other = (Customer) obj;
+		return Objects.equals(fname, other.fname) && Objects.equals(id, other.id) && Objects.equals(lname, other.lname);
+	}
+	
+	
+	 
+}
