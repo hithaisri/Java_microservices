@@ -1,0 +1,6 @@
+package com.cts.project2.service;
+
+public interface IUserService {
+
+	public Integer saveUser(User user);
+}

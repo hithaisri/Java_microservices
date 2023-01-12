@@ -1,0 +1,5 @@
+package com.cts.project6.service;
+
+public interface StorageService {
+
+}

@@ -1,9 +1,0 @@
-package com.collectionframework;
-
-import java.util.Comparator;
-
-public class ComparatorExample implements Comparator<Student> {
-
-	
-	
-}

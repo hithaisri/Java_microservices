@@ -1,0 +1,31 @@
+package com.dsa;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class RollingString {
+
+	public static void main(String[] args) {
+		List<String> list=new ArrayList<>();
+		list.add("0 0 L");
+		list.add("2 0 R");
+		
+		
+		rollingString("abc",list);
+	}
+	public static String rollingString(String s, List<String> operations) {
+
+		char[] ans=s.toCharArray();
+		for(int i=0;i<operations.size();i++){
+			int a=Integer.parseInt(operations.get(i));
+			int b=Integer.parseInt(operations.get(i));
+
+			/*for(int j=a;j<=b;j++){
+				ans[j]=operations.get(i);
+
+			}*/
+		}
+
+
+	}
+}

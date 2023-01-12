@@ -1,0 +1,24 @@
+package com.cts.project2.service.impl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.cts.project2.entity.User;
+import com.cts.project2.repository.UserRepository;
+import com.cts.project2.service.IUserService;
+
+@Service
+public class UserServiceImpl implements IUserService{
+
+	@Autowired
+	UserRepository repository;
+	
+	@Override
+	public Integer saveUser(User user) {
+			User u=repository.save(user);
+		return null;
+	}
+	
+	
+
+}
