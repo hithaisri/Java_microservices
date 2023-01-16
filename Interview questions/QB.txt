@@ -54,4 +54,5 @@ Difference between Soap and Rest.  
 What is the difference between Post and Put methods?  
 What does annotation @PathVariable do?  
  
-
+what is intern method?
+how to make a class as immutable in java?
